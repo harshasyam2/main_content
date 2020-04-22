@@ -22,7 +22,7 @@
 
 .Form-submit{
   font-size:14px;
-  margin-left:90px;
+  margin-left:70px;
   padding:10px;
   color:linen;
   font-weight: 600;
@@ -38,4 +38,12 @@
   padding:10px;
   text-align: center;
   text-shadow:2px 4px 6px red;
+}
+
+.NewCustomers{
+  margin-left:40px;
+}
+.Signin_content{
+  max-width: 300px;
+  margin-left:430px;
 }
