@@ -7,7 +7,7 @@ class Menu < ActiveRecord::Base
     all.where("dish_type=?", "Drinks")
   end
   def self.fruitjuice
-    all.where("dish_type=?", "Fruit juice")
+    all.where("dish_type=?", "Fruit Juice")
   end
 
   def self.chinese

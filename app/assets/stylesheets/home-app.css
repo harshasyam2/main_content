@@ -1,18 +1,43 @@
 .Home_page_menu{
   max-width:600px;
-  height:500px;
+  height: 600px;
   margin:0 auto;
   margin-left:250px;
   margin-right:250px;
 }
 
 .Home_menu{
-  width:130px;
   font-size:14px;
-  margin-top:30px;
-  margin-left:15px;
-  margin-right:5px;
-  background-color: linen;
-  padding:15px;
-  border: 2px solid lightsteelblue;
+  margin-top:20px;
+  padding:8px;
+  cursor: pointer;
+}
+
+.Home_creation_line{
+  display:flex;
+  align-items:center;
+}
+
+.heading{
+  font-size:18px;
+  text-align: center;
+  font-weight:600px;
+  margin-top:15px;
+  text-shadow: 10px 10px 10px red;
+}
+
+.heading:hover{
+  text-decoration: underline;
+}
+
+.create{
+  margin-left:360px;
+}
+
+.signin{
+  margin-left:5px;
+}
+
+.content{
+  margin-top:100px;
 }

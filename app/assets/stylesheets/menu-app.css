@@ -19,7 +19,7 @@
 
 .Menu-title{
   text-align: center;
-  color:red;
+  text-shadow: 5px 10px 10px red;
   font-size:25px;
   margin:5px;
   padding:5px;
@@ -169,7 +169,7 @@
   margin-top:-5px;
   margin-left:12px;
   margin-bottom:20px;
-  text-shadow: 3px 6px 9px lightgreen;
+  text-shadow: 10px 7px 4px lightsalmon;
 }
 
 .item_count{

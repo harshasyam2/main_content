@@ -1,16 +1,9 @@
 <section class="Home_page_menu">
-  <table width="100%">
-    <tr>
-      <th></th>
-      <th></th>
-      <th width="15%" text-align="right">
-        <p class="Home_menu" >Create Account</p>
-      </th>
-      <th width="15%" text-align="right">
-        <p class="Home_menu" >Sign in</p>
-      </th>
-      <th></th>
-      <th></th>
-    </tr>
-  </table>
+  <div class="Home_creation_line">
+    <p class="Home_menu create" ><%= link_to "Create Account", new_customer_path %></p>
+    <p class="Home_menu signin" ><%= link_to "Sign in",new_sessions_path %></p>
+  </div>
+    <h1 class="heading">Welcome to our restaurent!</h1>
+    <p class="content"> <img src="content.png"></p>
+
 </section>
