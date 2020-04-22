@@ -6,12 +6,17 @@ class CustomersController < ApplicationController
   end
 
   def create
-    Customer.create!(
+    new_customer = Customer.new(
       first_name: params[:first_name],
       last_name: params[:last_name],
       email: params[:email],
       password: params[:password],
     )
-    redirect_to "/"
+    if new_customer.save
+      redirect_to "/"
+    else
+      flash[:error] = new_customer.errors.full_messages.join(",")
+      redirect_to new_customer_path
+    end
   end
 end

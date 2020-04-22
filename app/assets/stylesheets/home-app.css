@@ -1,9 +1,8 @@
 .Home_page_menu{
-  max-width:600px;
-  height: 600px;
-  margin:0 auto;
-  margin-left:250px;
-  margin-right:250px;
+  width:100%;
+  height: auto;
+  margin:20px;
+  margin-left: 20px;
 }
 
 .Home_menu{
@@ -31,7 +30,7 @@
 }
 
 .create{
-  margin-left:360px;
+  margin-left:800px;
 }
 
 .signin{

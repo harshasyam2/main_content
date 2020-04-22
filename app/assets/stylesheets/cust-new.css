@@ -17,6 +17,9 @@
 .Form-input-label{
   color:#555555;
   font-size:16px;
+  text-shadow: 3px 3px 3px gray;
+  display:flex;
+  align-items:center;
   margin-bottom:10px;
 }
 
@@ -49,4 +52,15 @@
   margin:0 auto;
   padding:15px;
   padding-left:70px;
+}
+
+.Flash-error{
+ text-align: center;
+ color: darkred;
+ margin:20px;
+}
+
+.Mandatory{
+  color:red;
+  margin:5px;
 }
