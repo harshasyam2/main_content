@@ -41,3 +41,13 @@
 .content{
   margin-top:100px;
 }
+
+.Customer_heading{
+  max-width: 700px;
+  margin:0 auto;
+  margin-top:30px;
+  padding:10px;
+  background-color:lightgray;
+  display:flex;
+  justify-content: space-between;
+}

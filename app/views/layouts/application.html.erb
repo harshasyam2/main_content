@@ -10,6 +10,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <% if @current_user %>
+      <p class="Customer_heading">
+        Welcome <%= @current_user.first_name %>!
+        <%= link_to "Sign out", destroy_session_path, method:"delete"%>
+      </p>
+    <% end %>
+        <%= yield %>
   </body>
 </html>
