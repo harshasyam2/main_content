@@ -1,0 +1,18 @@
+.Home_page_menu{
+  max-width:600px;
+  height:500px;
+  margin:0 auto;
+  margin-left:250px;
+  margin-right:250px;
+}
+
+.Home_menu{
+  width:130px;
+  font-size:14px;
+  margin-top:30px;
+  margin-left:15px;
+  margin-right:5px;
+  background-color: linen;
+  padding:15px;
+  border: 2px solid lightsteelblue;
+}
