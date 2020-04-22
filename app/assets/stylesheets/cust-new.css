@@ -43,7 +43,10 @@
 .NewCustomers{
   margin-left:40px;
 }
+
 .Signin_content{
   max-width: 300px;
-  margin-left:430px;
+  margin:0 auto;
+  padding:15px;
+  padding-left:70px;
 }
