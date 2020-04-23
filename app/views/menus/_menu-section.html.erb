@@ -12,12 +12,14 @@
             </p>
           </td>
           <td>
-           <input class="item_count" type="number" size="1000">
+           <input class="item_count" type="number" min="0" max="1000">
           </td>
-          <%= form_with(url: "/menus/#{menu.id}",method: "DELETE") do %>
-            <td>
-              <input class="delete" type="submit" value="Remove Item">
-            </td>
+          <% if show_delete_btn %>
+            <%= form_with(url: "/menus/#{menu.id}",method: "DELETE") do %>
+              <td>
+                <input class="delete" type="submit" value="Remove Item">
+              </td>
+            <% end %>
           <% end %>
         </tr>
 

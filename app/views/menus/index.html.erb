@@ -3,31 +3,33 @@
     <img src="cart.png" width="40%">
   </section>
 
-  <form class="Add_menu" action="/menus" method="POST">
-      <input class="item" type="text" name="item" size="15" placeholder="Add an item">
-      <input class="price" type="text" name="price" size="10" placeholder="Enter Price">
-      <input class="item_type" type="text" name="item_type" size="13" placeholder="Item Type">
-      <input class="dish_type" type="text" name="dish_type" size="15" placeholder="Dish Type">
-      <input class="extension" type="text" name="extension" size="10" placeholder="Extension Format">
-      <input class="submit" type="submit" value="Add an item">
-  </form>
+  <% if show_adding_column %>
+    <form class="Add_menu" action="/menus" method="POST">
+        <input class="item" type="text" name="item" size="15" placeholder="Add an item">
+        <input class="price" type="text" name="price" size="10" placeholder="Enter Price">
+        <input class="item_type" type="text" name="item_type" size="13" placeholder="Item Type">
+        <input class="dish_type" type="text" name="dish_type" size="15" placeholder="Dish Type">
+        <input class="extension" type="text" name="extension" size="10" placeholder="Extension Format">
+        <input class="submit" type="submit" value="Add an item">
+    </form>
+  <% end %>
 
   <p class="Menu-title">Vegeterian Menu</p>
   <hr>
-  <%= render partial: "menu-section", locals: {menu_title:"Veg Starters",menus:Menu.Veg.starter}%>
-  <%= render partial: "menu-section", locals: {menu_title:"Veg Chinese",menus:Menu.Veg.chinese}%>
-  <%= render partial: "menu-section", locals: {menu_title:"Veg Meals",menus:Menu.Veg.meals}%>
-  <%= render partial: "menu-section", locals: {menu_title:"Veg Others",menus:Menu.Veg.others}%>
+  <%= render partial: "menu-section", locals: {menu_title:"Veg Starters",menus:Menu.Veg.starter,show_delete_btn:show_delete}%>
+  <%= render partial: "menu-section", locals: {menu_title:"Veg Chinese",menus:Menu.Veg.chinese,show_delete_btn:show_delete}%>
+  <%= render partial: "menu-section", locals: {menu_title:"Veg Meals",menus:Menu.Veg.meals,show_delete_btn:show_delete}%>
+  <%= render partial: "menu-section", locals: {menu_title:"Veg Others",menus:Menu.Veg.others,show_delete_btn:show_delete}%>
 
   <p class="Menu-title">Non Vegeterian Menu</p>
   <hr>
-  <%= render partial: "menu-section", locals: {menu_title:"Non-Veg Starters",menus:Menu.Nonveg.starter}%>
-  <%= render partial: "menu-section", locals: {menu_title:"Non-Veg Chinese",menus:Menu.Nonveg.chinese}%>
-  <%= render partial: "menu-section", locals: {menu_title:"Non-Veg Meals",menus:Menu.Nonveg.meals}%>
-  <%= render partial: "menu-section", locals: {menu_title:"Non-Veg Others",menus:Menu.Nonveg.others}%>
+  <%= render partial: "menu-section", locals: {menu_title:"Non-Veg Starters",menus:Menu.Nonveg.starter,show_delete_btn:show_delete}%>
+  <%= render partial: "menu-section", locals: {menu_title:"Non-Veg Chinese",menus:Menu.Nonveg.chinese,show_delete_btn:show_delete}%>
+  <%= render partial: "menu-section", locals: {menu_title:"Non-Veg Meals",menus:Menu.Nonveg.meals,show_delete_btn:show_delete}%>
+  <%= render partial: "menu-section", locals: {menu_title:"Non-Veg Others",menus:Menu.Nonveg.others,show_delete_btn:show_delete}%>
   <p class="Menu-title">Drinks</p>
 
   <hr>
-  <%= render partial: "menu-section", locals: {menu_title:"Cool Drinks",menus:Menu.Others.cooldrink}%>
-  <%= render partial: "menu-section", locals: {menu_title:"Fruit Juice",menus:Menu.Others.fruitjuice}%>
+  <%= render partial: "menu-section", locals: {menu_title:"Cool Drinks",menus:Menu.Others.cooldrink,show_delete_btn:show_delete}%>
+  <%= render partial: "menu-section", locals: {menu_title:"Fruit Juice",menus:Menu.Others.fruitjuice,show_delete_btn:show_delete}%>
 </main>
